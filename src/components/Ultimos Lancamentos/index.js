@@ -1,5 +1,7 @@
 import { livros } from './dadosUltimosLancamentos';
 import { Titulo } from '../Titulo';
+import CardRecomendacao from '../Card Recomendacao';
+import livro2 from '../../imagens/livro2.png'
 
 import styled from 'styled-components';
 
@@ -27,6 +29,12 @@ const UltimosLancamentos = () => {
                     <img src={livro.src} />
                 )) }
             </NovosLivrosContainer>
+            <CardRecomendacao 
+                titulo='Talvez você se interesse por...'
+                subTitulo='Angular 11'
+                descricao='Construindo uma aplicação com a plataforma Google.'
+                img={livro2}
+            />
         </UltimosLancamentosContainer>
     )
 }
